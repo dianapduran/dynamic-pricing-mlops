@@ -1,0 +1,23 @@
+[project]
+name = "dynamic-pricing-mlops"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Diana Duran", email = "dianadurana89@gmail.com" }
+]
+requires-python = ">=3.11, <3.12"
+dependencies = [
+    "mlflow>=3.15.1",
+    "numpy>=2.4.6",
+    "pandas>=2.3.3",
+    "pulp>=3.3.2",
+    "scikit-learn>=1.9.0",
+    "xgboost>=3.2.0",
+]
+
+[project.scripts]
+dynamic-pricing-mlops = "dynamic_pricing_mlops:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
